@@ -32,13 +32,16 @@ export default class PageScrollProgress {
         scrollToTopButton.innerHTML = '⬆'
         scrollToTopButton.ariaLabel = 'Scroll to top'
 
+        scrollToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            })
+        })
+
         scrollToTopButton.addEventListener('keydown', (event) => {
             if (event.key === 'Enter' || event.key === ' ') {
-                event.preventDefault()
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                })
+                scrollToTopButton.click()
                 document.getElementById('retake-quiz-button').focus()
             }
         })
