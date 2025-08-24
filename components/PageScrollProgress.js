@@ -39,12 +39,6 @@ export default class PageScrollProgress {
             })
         })
 
-        scrollToTopButton.addEventListener('keydown', (event) => {
-            if (event.key === 'Enter' || event.key === ' ') {
-                scrollToTopButton.click()
-                document.getElementById('retake-quiz-button').focus()
-            }
-        })
         document.body.appendChild(scrollToTopButton)
     }
 }
