@@ -27,8 +27,6 @@ yarn-error.log*
 dist/
 build/
 *.min.js
-*.min.css
-style-sheet.min.css
 
 # Environment variables
 .env
