@@ -1,0 +1,54 @@
+{
+  "name": "quest-quiz-application",
+  "version": "1.0.0",
+  "description": "A modern, accessible, and feature-rich web-based quiz application built with vanilla JavaScript. Features interactive quizzes, dark/light themes, timer functionality, and comprehensive accessibility support.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "start": "python -m http.server 8000",
+    "build:css": "node build-css.js",
+    "build": "npm run build:css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "quiz",
+    "javascript",
+    "vanilla-js",
+    "interactive",
+    "educational",
+    "web-app",
+    "accessibility",
+    "responsive",
+    "dark-theme",
+    "timer",
+    "component-based",
+    "es6",
+    "html5",
+    "css3"
+  ],
+  "author": {
+    "name": "Ayman Soliman",
+    "url": "https://github.com/aymansoliman-dev",
+    "email": "aymansoliman.dev@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aymansoliman-dev/quest-quiz-app.git"
+  },
+  "homepage": "https://aymansoliman-dev.github.io/Quest",
+  "bugs": {
+    "url": "https://github.com/aymansoliman-dev/quest-quiz-app/issues"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "> 0.5%"
+  ],
+  "devDependencies": {},
+  "dependencies": {}
+}

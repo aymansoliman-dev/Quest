@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" aria-label=" ">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Quest - Test your knowledge with interactive quizzes.">
+  <meta name="keywords" content="quiz, app, questions, answers, test, knowledge">
+  <meta name="author" content="Ayman Soliman">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://aymansoliman-dev.github.io/Quest">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <!-- Preconnect to required origins for faster loading -->
+  <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://aymansoliman-dev.github.io">
+  <title aria-label=" ">Quest</title>
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Quest">
+  <meta property="og:description" content="Test your knowledge with interactive quizzes.">
+  <meta property="og:url" content="https://aymansoliman-dev.github.io/Quest">
+  <meta property="og:image" content="https://res.cloudinary.com/dxlofja7z/image/upload/favicon_rowafz.png">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Quest">
+  <meta name="twitter:description" content="Test your knowledge with interactive quizzes.">
+  <meta name="twitter:image" content="https://res.cloudinary.com/dxlofja7z/image/upload/favicon_rowafz.png">
+  <!----------------------------------------->
+  <script>
+    // Apply theme immediately before any rendering
+    (function() {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        document.documentElement.setAttribute('theme', savedTheme);
+      } else {
+        // Set default theme and save it
+        localStorage.setItem('theme', 'light');
+        document.documentElement.setAttribute('theme', 'light');
+      }
+    })();
+  </script>
+  <!------------------------------------------>
+  <script>
+    (function() {
+      // Check if minified CSS exists
+      fetch('./style-sheet.min.css', { method: 'HEAD' })
+        .then(() => {
+          // Minified CSS exists, use it for better performance
+          const link = document.createElement('link');
+          link.rel = 'stylesheet';
+          link.href = 'style-sheet.min.css';
+          document.head.appendChild(link);
+        })
+        .catch(() => {
+          // Minified CSS doesn't exist, use regular CSS
+          const link = document.createElement('link');
+          link.rel = 'stylesheet';
+          link.href = 'style-sheet.css';
+          document.head.appendChild(link);
+        });
+    })();
+  </script>
+  <!----------------------------------------->
+  <script type="module" src="index.js" defer></script>
+  <!------------------------------------------->
+</head>
+<body>
+
+<!-- Accessibility: ARIA live region -->
+<div id="sr-output" aria-live="polite" style="position:absolute; left:-9999px;"></div>
+
+<main role="main">
+  <!-- HTML content goes here -->
+</main>
+
+</body>
+</html>

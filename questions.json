@@ -1,0 +1,66 @@
+[
+  {
+    "title": "What does HTML stand for?",
+    "answers": ["Hyper Text Markup Language", "High Tech Machine Language", "Home Tool Markup Language", "Hyperlinks and Text Management Language"],
+    "correct_answer": "Hyper Text Markup Language"
+  },
+  {
+    "title": "Which CSS property is used to change text color?",
+    "answers": ["font-style", "color", "text-color", "background-color"],
+    "correct_answer": "color"
+  },
+  {
+    "title": "Which of the following is NOT a JavaScript data type?",
+    "answers": ["Number", "String", "Boolean", "Character"],
+    "correct_answer": "Character"
+  },
+  {
+    "title": "What does CSS stand for?",
+    "answers": ["Creative Style System", "Cascading Style Sheets", "Computer Styled Sections", "Colorful Style Syntax"],
+    "correct_answer": "Cascading Style Sheets"
+  },
+  {
+    "title": "Which HTML element is used to include JavaScript code?",
+    "answers": ["js", "javascript", "script", "code"],
+    "correct_answer": "script"
+  },{
+    "title": "How can we make an element's text bold?",
+    "answers": [
+      "Put it inside a b tag",
+      "Put it inside a strong tag",
+      "Use the font-weight property in CSS",
+      "All answers are correct"
+    ],
+    "correct_answer": "All answers are correct"
+  },
+  {
+    "title": "How can we include an external page inside our HTML page?",
+    "answers": [
+      "By using 'include' in HTML",
+      "By using 'load' in HTML",
+      "By using the i frame tag",
+      "All solutions are wrong"
+    ],
+    "correct_answer": "By using the i frame tag"
+  },  
+  {
+    "title": "Which tag does not exist in HTML?",
+    "answers": [
+      "object",
+      "basefont",
+      "abbr",
+      "All tags exist in HTML"
+    ],
+    "correct_answer": "All tags exist in HTML"
+  },
+  {
+    "title": "Which element does not exist in HTML5 semantics?",
+    "answers": [
+      "article",
+      "section",
+      "blockquote",
+      "aside"
+    ],
+    "correct_answer": "blockquote"
+  }
+]
